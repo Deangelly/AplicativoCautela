@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Cautelas</string>
+    <string name="nova_cautela">Nova Cautela</string>
+    <string name="cautelas">Cautelas</string>
+    <string name="professor">Professor</string>
+    <string name="disciplina">Disciplina</string>
+    <string name="monitores">Monitores</string>
+    <string name="local">Local</string>
+    <string name="_17_50_07_de_dezembro_de_2019">17:50 07 May 2019</string>
+    <string name="novo_usu_rio">Novo Usuário</string>
+    <string name="entregar_tablet">Entregar Tablet</string>
+    <string name="data">Data</string>
+    <string name="aluno">Aluno: </string>
+    <string name="deangelly_coitinho_figueiredo">Deangelly Coitinho Figueiredo</string>
+    <string name="tablet">Tablet </string>
+    <string name="_001">001</string>
+    <string name="matr_cula">Matrícula: </string>
+    <string name="matricula">21554006</string>
+    <string name="entregue">Entregue</string>
+    <string name="usu_rio">Usuário</string>
+    <string name="descricao">Descrição</string>
+    <string name="scan">SCAN</string>
+    <string name="cancelar">CANCELAR</string>
+    <string name="salvar">SALVAR</string>
+    <string name="hora_de_empr_stimo">Hora de empréstimo:</string>
+    <string name="hora_de_devolu_o">Hora de devolução:</string>
+    <string name="descri_o">Descrição</string>
+    <string name="tela_rachada">Tela Rachada</string>
+
+
+    <dimen name="width_dialog_new_user">340dp</dimen>
+    <dimen name="height_dialog_new_user">300dp</dimen>
+    <string name="title_activity_drawable">NovaCautelaActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="observa_o">Observação</string>
+    <string name="nenhum_tablet_foi_emprestado">Nenhum tablet foi emprestado</string>
+    <string name="deletar_empr_stimo">Deletar empréstimo</string>
+    <string name="voc_tem_certeza_que_deseja_excluir_esse_empr_stimo">Você tem certeza que deseja excluir esse empréstimo?</string>
+    <string name="salvar_cautelas">Salvar cautela</string>
+    <string name="nenhuma_cautela_foi_salvada">Nenhuma cautela foi salvada</string>
+    <string name="n_o_foi_poss_vel_salvar_a_cautela">Não foi possível salvar a cautela</string>
+    <string name="preencha_todos_os_dados_sobre_a_disciplina_antes_de_salvar_a_cautela">Preencha todos os dados sobre a disciplina antes de salvar a cautela</string>
+    <string name="_1">1</string>
+    <string name="ok">ok</string>
+    <string name="sair_sem_salvar">Sair sem salvar</string>
+    <string name="qual_pdf_deseja_baixar">Qual PDF deseja baixar?</string>
+    <string name="voc_tem_certeza_que_deseja_deletar_essa_cautela">Você tem certeza que deseja deletar essa cautela?</string>
+    <string name="delete_cautela">Deletar Cautela</string>
+    <string name="n_o_h_nenhuma_cautela">Não há nenhuma cautela</string>
+    <string name="enviar">Enviar</string>
+    <string name="senha">Senha</string>
+    <string name="e_mail">E-mail</string>
+    <string name="texto_login">Informe seus dados para efetuar o login</string>
+    <string name="logout">Sair</string>
+    <string name="logout_text">Você tem certeza que deseja sair?</string>
+    <string name="upload">Salvar em nuvem</string>
+    <string name="upload_text">Você tem certeza que deseja fazer upload?</string>
+    <string name="download">Baixar da nuvem</string>
+    <string name="save_cautela_from_cloud">Você deseja salvar essa cautela offline?</string>
+    <string name="cloud_text">Não há nenhuma cautela salva na nuvem</string>
+
+</resources>

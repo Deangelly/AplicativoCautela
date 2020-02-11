@@ -1,0 +1,162 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 3,
+    "identityHash": "919c51ad0bbd7d78b7b3b3c1676c8cda",
+    "entities": [
+      {
+        "tableName": "dados_table",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `matricula` TEXT, `nome` TEXT, `email` TEXT, `unidade` TEXT, `codCurso` TEXT, `cautela` TEXT, `nomeCurso` TEXT, `idUnico` TEXT, `tablet` TEXT, `descricao` TEXT, `horaDoEmprestimo` TEXT, `horaDaDevolucao` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "matricula",
+            "columnName": "matricula",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "nome",
+            "columnName": "nome",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "email",
+            "columnName": "email",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "unidade",
+            "columnName": "unidade",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "codCurso",
+            "columnName": "codCurso",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "cautela",
+            "columnName": "cautela",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "nomeCurso",
+            "columnName": "nomeCurso",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "idUnico",
+            "columnName": "idUnico",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "tablet",
+            "columnName": "tablet",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "descricao",
+            "columnName": "descricao",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "horaDoEmprestimo",
+            "columnName": "horaDoEmprestimo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "horaDaDevolucao",
+            "columnName": "horaDaDevolucao",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "cautelas_table",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `materia` TEXT, `professor` TEXT, `data` TEXT, `monitores` TEXT, `local` TEXT, `emprestimos` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "materia",
+            "columnName": "materia",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "professor",
+            "columnName": "professor",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "data",
+            "columnName": "data",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "monitores",
+            "columnName": "monitores",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "local",
+            "columnName": "local",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "emprestimos",
+            "columnName": "emprestimos",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '919c51ad0bbd7d78b7b3b3c1676c8cda')"
+    ]
+  }
+}

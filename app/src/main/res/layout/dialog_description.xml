@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:hint="@string/observa_o"
+                    android:orientation="horizontal"
+                    android:textColorHint="@color/azul"
+                    android:textSize="16sp"
+                    app:boxStrokeColor="@color/colorPrimary"
+                    app:boxStrokeWidth="1dp"
+                    app:hintTextAppearance="@style/Text_input">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/observations"
+                        android:layout_width="match_parent"
+                        android:layout_height="36.5dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@drawable/custom_input_text"
+                        android:fontFamily="@font/ps_bold"
+                        android:padding="8dp"
+                        android:textSize="14sp"
+                        android:drawableEnd="@drawable/observations"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

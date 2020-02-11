@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class = ".ContactItem">
+    </data>
+
+    <androidx.drawerlayout.widget.DrawerLayout
+
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="end">
+
+
+    <include
+        layout="@layout/app_bar_drawable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".NovaCautelaActivity">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <!--<androidx.core.widget.NestedScrollView
+                android:id="@+id/nested_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="3dp"
+                android:fadeScrollbars="false"
+                android:scrollbarSize="5dp"
+                android:scrollbarStyle="outsideInset"
+                android:scrollbarThumbVertical="@NovaCautelaActivity/scrollbar"
+                android:scrollbars="vertical">-->
+
+                <RelativeLayout
+                    android:id="@+id/rltv_icons"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="24dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/txt_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp">
+                        <!--
+                                                <ImageView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginTop="16dp"
+                                                    android:src="@NovaCautelaActivity/date" />-->
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:hint="@string/data"
+                                android:orientation="horizontal"
+                                android:textColorHint="@color/azul"
+                                android:textSize="16sp"
+                                app:boxStrokeColor="@color/colorPrimary"
+                                app:boxStrokeWidth="1dp"
+                                app:hintTextAppearance="@style/Text_input">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/data"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="36.5dp"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_marginEnd="16dp"
+                                    android:background="@drawable/custom_input_text"
+                                    android:fontFamily="@font/ps_bold"
+                                    android:padding="8dp"
+                                    android:text="@string/_17_50_07_de_dezembro_de_2019"
+                                    android:textSize="14sp"
+                                    android:drawableEnd="@drawable/date"/>
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/txt_teacher"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txt_date"
+                        android:layout_marginStart="16dp">
+                        <!--
+                                                <ImageView
+                                                    android:layout_width="50dp"
+                                                    android:layout_height="50dp"
+                                                    android:layout_marginTop="16dp"
+                                                    android:src="@NovaCautelaActivity/professor" />-->
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/text2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:hint="@string/professor"
+                            android:orientation="horizontal"
+                            android:textColorHint="@color/azul"
+                            app:boxStrokeColor="@color/colorPrimary"
+                            app:boxStrokeWidth="1dp"
+                            app:hintTextAppearance="@style/Text_input">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/professor"
+                                android:layout_width="match_parent"
+                                android:layout_height="36.5dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginEnd="16dp"
+                                android:background="@drawable/custom_input_text"
+                                android:fontFamily="@font/ps_bold"
+                                android:padding="8dp"
+                                android:textSize="14sp"
+                                android:drawableEnd="@drawable/professor"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/txt_subject"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_teacher"
+                        android:layout_marginStart="16dp">
+                        <!--
+                                                <ImageView
+                                                    android:layout_width="50dp"
+                                                    android:layout_height="50dp"
+                                                    android:layout_marginTop="16dp"
+                                                    android:src="@NovaCautelaActivity/subject" />-->
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/text3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:hint="@string/disciplina"
+                            android:orientation="horizontal"
+                            android:textColorHint="@color/azul"
+                            app:boxStrokeColor="@color/colorPrimary"
+                            app:boxStrokeWidth="1dp"
+                            app:hintTextAppearance="@style/Text_input"
+                            >
+
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/disciplina"
+                                android:layout_width="match_parent"
+                                android:layout_height="36.5dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginEnd="16dp"
+                                android:background="@drawable/custom_input_text"
+                                android:fontFamily="@font/ps_bold"
+                                android:padding="8dp"
+                                android:textSize="14sp"
+                                android:drawableEnd="@drawable/subject"
+                                />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/txt_monitor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_subject"
+                        android:layout_marginStart="16dp">
+                        <!--
+                                                <ImageView
+                                                    android:layout_width="50dp"
+                                                    android:layout_height="50dp"
+                                                    android:layout_marginTop="16dp"
+                                                    android:src="@NovaCautelaActivity/monitor" />-->
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/text4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txt_subject"
+                            android:layout_marginTop="8dp"
+                            android:hint="@string/monitores"
+                            android:orientation="horizontal"
+                            android:textColorHint="@color/azul"
+                            android:textSize="16sp"
+                            app:boxStrokeColor="@color/azul"
+                            app:boxStrokeWidth="1dp"
+                            app:hintTextAppearance="@style/Text_input">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/monitores"
+                                android:layout_width="match_parent"
+                                android:layout_height="36.5dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginEnd="16dp"
+                                android:background="@drawable/custom_input_text"
+                                android:fontFamily="@font/ps_bold"
+                                android:padding="8dp"
+                                android:textColorHint="@color/black_15"
+                                android:textSize="14sp"
+                                android:drawableEnd="@drawable/monitor"
+                                />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/txt_locate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txt_monitor"
+                        android:layout_marginStart="16dp">
+                        <!--
+                                                <ImageView
+                                                    android:layout_width="50dp"
+                                                    android:layout_height="50dp"
+                                                    android:layout_marginTop="16dp"
+                                                    android:src="@NovaCautelaActivity/locate" />-->
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/text5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:hint="@string/local"
+                            android:orientation="horizontal"
+                            android:textColorHint="@color/azul"
+                            android:textSize="16sp"
+                            app:boxStrokeColor="@color/colorPrimary"
+                            app:boxStrokeWidth="1dp"
+                            app:hintTextAppearance="@style/Text_input"
+
+
+                            >
+
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/local"
+                                android:layout_width="match_parent"
+                                android:layout_height="36.5dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginEnd="16dp"
+                                android:background="@drawable/custom_input_text"
+                                android:fontFamily="@font/ps_bold"
+                                android:padding="8dp"
+                                android:textSize="14sp"
+                                android:drawableEnd="@drawable/locate"
+                                />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+                    <!--<RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="16dp"
+                            android:text="@string/novo_usu_rio"
+                            android:onClick="onNewUsuarioClick"/>
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="16dp"
+                            android:text="@string/entregar_tablet"
+                            android:onClick="onEntregarTabletClick"/>
+
+                    </RelativeLayout>-->
+                </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/icons"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:id="@+id/new_user"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_centerVertical="true"
+                    android:shadowColor="@color/azul"
+                    android:onClick="onNewUsuarioClick"
+                    app:srcCompat="@drawable/new_user" />
+
+                <ImageView
+                    android:id="@+id/deliver_tablet"
+                    android:layout_width="153dp"
+                    android:layout_height="124dp"
+                    android:layout_toRightOf="@id/new_user"
+                    android:layout_alignTop="@id/new_user"
+                    android:onClick="onEntregarTabletClick"
+                    android:layout_marginStart="29dp"
+                    app:srcCompat="@drawable/devolution" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/tablet_cout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    app:fabCustomSize="40dp"
+                    android:backgroundTint="@color/white"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="6dp"
+                    app:borderWidth="0dp"
+
+                    />
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/sync"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:fabCustomSize="40dp"
+                    android:backgroundTint="@color/white"
+                    android:layout_toLeftOf="@id/tablet_cout"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    app:borderWidth="0dp"
+                    android:src="@drawable/sync"
+                    android:tint="@color/colorPurple"
+
+                    />
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true">
+
+                </ProgressBar>
+                <TextView
+                    android:id="@+id/save_cautela_init"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/salvar_cautelas"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_centerHorizontal="true"
+                    android:padding="16sp"
+                    android:background="@drawable/border2"
+                    android:textColor="@color/colorPurple"
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+        m<com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="600dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:fitsSystemWindows="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:background="@color/cinza"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+
+        <TextView
+            android:id="@+id/text_empty_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/nenhum_tablet_foi_emprestado"
+            />
+
+
+
+        </RelativeLayout>
+
+    </com.google.android.material.navigation.NavigationView>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
+
+
+</layout>

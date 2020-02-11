@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "515743848207",
+    "firebase_url": "https://appcautela.firebaseio.com",
+    "project_id": "appcautela",
+    "storage_bucket": "appcautela.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:515743848207:android:f824f84f06a10c76c0107a",
+        "android_client_info": {
+          "package_name": "com.unasusam.appcautela"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "515743848207-6bf4u30ckf2hd6obe9ik5a08jk5ik1sl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.unasusam.appcautela",
+            "certificate_hash": "19fd1a73b54e9f768524b8a2dbc7c4d3ca402468"
+          }
+        },
+        {
+          "client_id": "515743848207-gcoplouvok6vr20hfifqka0sejv73ki5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATBqBQ8uEYrQ24AXypsh8xDAR0Iz3GhtA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "515743848207-gcoplouvok6vr20hfifqka0sejv73ki5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

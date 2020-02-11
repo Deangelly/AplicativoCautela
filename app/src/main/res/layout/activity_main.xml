@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:srcCompat="@drawable/logo_cautelas"
+        />
+
+    <ImageView
+        android:id="@+id/logout"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/logout"
+        android:layout_marginTop="6dp"
+        android:layout_marginStart="6dp"
+        android:onClick="onLogoutClick"
+        android:alpha="0.2"
+        >
+    </ImageView>
+  <!--  <ImageView
+        android:layout_width="140dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-40dp"
+        app:srcCompat="@drawable/logo_proinovalab"
+        android:layout_below="@+id/logo"
+        />-->
+    <View style="@style/horizontal_divider_main"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="132dp"/>
+    <Button
+        android:id="@+id/new_cautela"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_alignTop="@id/logo"
+        android:onClick="onNewCautelaClick"
+        android:background="@drawable/new_caution"
+       />
+    <Button
+        android:id="@+id/cautelas"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignParentEnd="true"
+android:layout_alignBottom="@id/logo"
+        android:onClick="onCautelasClick"
+        android:background="@drawable/observacoes" />
+
+    <View style="@style/horizontal_divider_main"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="1dp"/>
+</RelativeLayout>

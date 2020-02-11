@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:padding="16dp"
+        android:src="@drawable/logo_cautelas"
+        android:layout_centerVertical="true">
+    </ImageView>
+
+    <RelativeLayout
+        android:id="@+id/campos"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+       android:layout_toEndOf="@id/logo">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/informe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="50dp"
+                android:text="@string/texto_login"
+                android:textColor="@color/colorPrimaryDark" />
+        <ImageView
+            android:id="@+id/user"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/user"
+            android:layout_below="@id/informe"
+            android:tint="@color/colorPrimary"
+
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="8dp"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/user"
+            android:layout_alignBottom="@id/user"
+            android:layout_marginLeft="8dp"
+            android:hint="@string/e_mail"
+            android:orientation="horizontal"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            app:boxStrokeColor="@color/white"
+            app:boxStrokeWidth="1dp"
+            app:hintTextAppearance="@style/Text_input">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="36.5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/custom_input_login"
+                android:fontFamily="@font/ps_bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="8dp"
+                android:textSize="14sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <ImageView
+            android:id="@+id/pass"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/key"
+            android:tint="@color/colorPrimaryDark"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="8dp"
+            android:layout_below="@id/user"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/pass"
+            android:layout_alignBottom="@id/pass"
+            android:layout_marginLeft="8dp"
+            android:hint="@string/senha"
+            android:orientation="horizontal"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            app:boxStrokeColor="@color/white"
+            app:boxStrokeWidth="1dp"
+            app:hintTextAppearance="@style/Text_input">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="36.5dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/custom_input_login"
+                android:fontFamily="@font/ps_bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="8dp"
+                android:textSize="14sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/butao_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pass"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:text="@string/enviar"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lnl_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/rltv_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border"
+        android:padding="6dp">
+
+        <ImageView
+            android:id="@+id/new_user"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/usuario" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/new_user"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="3dp"
+            android:layout_toEndOf="@id/new_user"
+            android:maxLines="1"
+            android:textColor="@color/barrinha"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/tablet"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/new_user"
+            android:src="@drawable/tablet" />
+
+        <TextView
+            android:id="@+id/tablet_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_name"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="6dp"
+            android:layout_toEndOf="@+id/tablet"
+            android:maxLines="1"
+            android:textColor="@color/barrinha"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/deliver"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="1dp"
+            android:layout_toEndOf="@+id/user_name"
+            android:src="@drawable/deliver" />
+
+        <TextView
+            android:id="@+id/date_deliver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/new_user"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/deliver"
+            android:textColor="@color/black_15" />
+
+        <ImageView
+            android:id="@+id/devolution"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/deliver"
+            android:layout_alignStart="@id/deliver"
+            android:src="@drawable/devolution_blue" />
+
+        <TextView
+            android:id="@+id/date_devolution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tablet"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/devolution"
+            android:textColor="@color/black_15" />
+
+        <ImageView
+            android:id="@+id/observations"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/date_deliver"
+            android:src="@drawable/observations" />
+
+        <ImageView
+            android:id="@+id/selection"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignTop="@+id/user_name"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/observations"
+            android:src="@drawable/selection" />
+
+        <ImageView
+            android:id="@+id/edit"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_below="@id/selection"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/observations"
+            android:src="@drawable/edit_blue" />
+    </RelativeLayout>
+
+</LinearLayout>
+
